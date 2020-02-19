@@ -1,0 +1,4 @@
+{
+	//Presets: preconfiguracion. el mismo nombre de la dependencia de instalacion.
+	"presets": ["@babel/preset-env"]
+}
