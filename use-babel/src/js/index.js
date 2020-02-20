@@ -1,12 +1,13 @@
 import '../css/index.css';
-import text from './text.js';
+import search from './search';
+import render from './render';
 
-//Aqui indico si el hot esta activo y los archivos que deseo esuchar.
-if (module.hot) {
-	module.hot.accept('./text.js', function() {
-		console.log('recargo en caliente.');
-		text();
-	});
-}
+const id = prompt('quien es ese pokemon');
 
-text();
+search(id)
+  .then(data => {
+    render(data);
+  })
+  .catch(() => {
+    console.log('no hubo pokemon');
+  });
