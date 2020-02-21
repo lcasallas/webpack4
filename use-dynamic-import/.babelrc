@@ -1,0 +1,8 @@
+{
+	"plugins": [
+		"@babel/plugin-syntax-dynamic-import",
+		"@babel/plugin-transform-runtime"
+	],
+	//Presets: preconfiguracion. el mismo nombre de la dependencia de instalacion.
+	"presets": ["@babel/preset-env", "@babel/preset-react"]
+}

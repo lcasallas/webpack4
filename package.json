@@ -13,7 +13,12 @@
 		"build:dev": "webpack-dev-server --config ./dev-server/webpack.config.js",
 		"build:babel": "webpack-dev-server --config ./use-babel/webpack.config.js",
 		"build:react": "webpack-dev-server --config ./use-react/webpack.config.js",
-		"build:url-loader": "webpack-dev-server --config ./use-url-loader/webpack.config.js"
+		"build:url-loader": "webpack-dev-server --config ./use-url-loader/webpack.config.js",
+		"build:prevent-duplication": "webpack --config ./use-prevent-duplication/webpack.config.js",
+		"build:dll": "webpack --config ./use-dynamic-library/webpack.dll.config.js",
+		"build:prevent-duplication-fast": "webpack --config ./use-dynamic-library/webpack.config.js",
+		"build:dynamic-dll": "webpack --config ./use-dynamic-import/webpack.dll.config.js",
+		"build:dynamic-load": "webpack --config ./use-dynamic-import/webpack.config.js"
 	},
 	"author": "@LeCode",
 	"license": "MIT",
@@ -24,6 +29,7 @@
 	},
 	"devDependencies": {
 		"@babel/core": "^7.8.4",
+		"@babel/plugin-syntax-dynamic-import": "^7.8.3",
 		"@babel/plugin-transform-runtime": "^7.8.3",
 		"@babel/preset-env": "^7.8.4",
 		"@babel/preset-react": "^7.8.3",
